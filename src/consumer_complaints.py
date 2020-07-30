@@ -5,7 +5,7 @@ import sys
 def run_program(input_file, output_file):
     # read the file and clean the data
     if not os.path.isfile(input_file):
-        print(f'The file {input_file} does not exist!')
+        print('The file {} does not exist!'.format(input_file))
         exit(-1)
     elif os.stat(input_file).st_size == 0:
         print(f'The file {input_file} is empty!')
