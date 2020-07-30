@@ -8,7 +8,7 @@ def run_program(input_file, output_file):
         print('The file {} does not exist!'.format(input_file))
         exit(-1)
     elif os.stat(input_file).st_size == 0:
-        print(f'The file {input_file} is empty!')
+        print('The file {} is empty!'.format(input_file))
         exit(-1)
     else:
         records = []
